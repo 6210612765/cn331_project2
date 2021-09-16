@@ -2,12 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
-class Airport(models.Model):
-    code = models.CharField(max_length = 3)
-    city = models.CharField(max_length = 64)
 
-    def __str__(self):
-        return f"{self.city} ({self.code})"
 
 
 class Flight(models.Model):
